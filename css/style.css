@@ -1,6 +1,38 @@
-.scrollspySite {
-  position: relative;
-  overflow: auto;
-  height: 380px; }
+/*
+bg :      #F45B69
+txt:      #EBEBEB 
+accent1:  #59C3C3
+accent2:  #4062BB
+accent3:  #52489C
+*/
+a{
+  color: #E2C044;
+}
+.bg-page{
+  background-color: #1E2019;
+}
+.bg-jumbo{
+  background-color: #393E41;
+}
+.bg-cards{
+  background-color: white;
+}
+.bg-card-item{
+  
+  background-color: white;
+}
+.card-item-text{
+  color: #393E41;
+}
 
-/*# sourceMappingURL=style.css.map */
+
+.header{
+  position: absolute;
+  background-color: #52489C;
+}
+.content{
+  text-align: center;
+  width: 50%;
+  background-color: #59C3C3;  
+  position: absolute;
+}
