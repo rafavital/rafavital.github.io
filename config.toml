@@ -1,9 +1,9 @@
-baseurl      = "localhost"
-title        = "Rafael Vital Homepage"
+baseurl      = "https://rafavital.github.io"
+title        = "Rafael Vital's Homepage"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
 paginate     = 10
-
+  
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -11,7 +11,7 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "Welcome to my homepage"
+  homeSubtitle = "Personal blog and homepage to Rafael Vital"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -20,33 +20,81 @@ paginate     = 10
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
+  description = "This is the homepage of Rafael Vital"
   keywords = "homepage, blog"
   images = [""]
 
+  [author]
+    name = "Rafael Vital"
+  
+  [params.portrait]
+    path     = "/profile.jpg"
+    alt      = "Profile picture"
+    maxWidth = "200px"
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/rafavla32"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:rvitall.alves@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/rafavital"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/rafael-vital"
+
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+  category = "categories"
+  tag      = "tags"
 
 [languages]
-    [languages.en]
-        title = "Hi, I'm Rafael Vital"
-        #subtitle = ""
-        keywords = "homepage, blog, resume"
-        copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-        readOtherPosts = "Read other posts"
+  [languages.en]
+    title = "Hi, I'm Rafael Vital"
+    #subtitle = ""
+    keywords = "homepage, blog, resume"
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
 
-        [languages.en.params.logo]
-        logoText = "Homepage"
-        logoHomeLink = "/"
-        # or
-        #
-        # path = "/img/your-example-logo.svg"
-        alt = "Go to homepage"
+    [languages.en.params.logo]
+      logoMark      = " "
+      logoText      = "Home"
+      logoHomeLink  = "/"
+      logoCursorDisabled = true
+      # path = "/img/your-example-logo.svg"
+      alt = "Go to homepage"
 
-  # And you can even create generic menu
+  [languages.pt]
+    subtitle  = "Olá, eu sou Rafael Vital"
+    #weight    = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+# And you can even create generic menu
+[menu]
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/blog"
+    url        = "/posts"
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
